@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  telegram-bot:
+    build: .
+    container_name: telegram-notify-bot
+    env_file:
+      - .env
+    ports:
+      - "8200:3000"
+    restart: unless-stopped
