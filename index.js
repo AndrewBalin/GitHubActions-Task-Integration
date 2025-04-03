@@ -50,7 +50,7 @@ app.post('/webhook', async (req, res) => {
                 .filter(match => match)
                 .map(match => match[1]);
 
-            message = `🚀 *Деплой в Продакн завершен*\n\nЗадачи:\n`;
+            message = `🚀 *Деплой в Продакшн завершен*\n\nЗадачи:\n`;
 
             for (const taskId of taskIds) {
                 // const title = await getBitrixTaskTitle(taskId);
