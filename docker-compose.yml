@@ -9,3 +9,5 @@ services:
     ports:
       - "8200:3001"
     restart: unless-stopped
+    networks:
+      - nginx-network
